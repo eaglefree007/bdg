@@ -39,7 +39,7 @@ function App() {
             {/* <h2 className="font-xl mx-auto font-bold">BDG Game</h2> */}
             {/* <img src="" alt="" /> */}
             <p className=" text-center text-xl">
-              bdg.
+              hack
             </p>
           </div>
         </div>
