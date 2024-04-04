@@ -53,11 +53,14 @@ function App() {
         <hr className="border-white-full border" />
       </div>
 
-      <div className=" my-2 flex flex-col justify-around w-[80%] sm:w-[70%] mx-auto">
-        <div className="flex justify-between my-auto w-1/2 mx-auto">
-          <p className=" font-bold text-3xl">RESULT</p>
+      <div className=" my-2 flex flex-col justify-between items-center w-[80%] sm:w-[70%] mx-auto">
+        <div className="flex justify-between my-auto w-[63%] mx-auto">
+          <div className="flex ml-2 mr-4 items-center">
+            <p className="">🥳</p>
+            <p className=" mx-2 font-bold text-3xl">RESULT</p>
+          </div>
           <div
-            className={`mx-auto text-3xl h-8 px-4  rounded-md py-auto font-bold`}
+            className={`mx-auto text-3xl h-8 pr-4  rounded-md py-auto font-bold`}
           >
             {period && color == "green" ? "🟢" : "🔴"}
           </div>
