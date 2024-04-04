@@ -39,8 +39,7 @@ function App() {
             {/* <h2 className="font-xl mx-auto font-bold">BDG Game</h2> */}
             {/* <img src="" alt="" /> */}
             <p className=" text-center text-xl">
-              Welcome to our app BDG Game. Enter your period Number and select
-              result type and see the result.
+              bdg.
             </p>
           </div>
         </div>
