@@ -58,7 +58,7 @@ function App() {
       <div className="w-1/3 mx-auto gap-6 my-2">
       <div className="flex gap-4 justify-between mb-4">
           <p className=" font-bold">RESULT :</p>
-          <div className={`mx-auto  h-8 border border-pink-50 px-4  rounded-md py-auto font-bold`}>{color == "green" ? "Win" : "Loss"}</div>
+          <div className={`mx-auto text-3xl h-8 px-4  rounded-md py-auto font-bold`}>{color == "green" ? "🟢" : "🔴"}</div>
           {/* <div className={`mx-auto border border-red-50 h-8 w-8 rounded-full bg-${color}-600`}></div> */}
         </div>
         <div className=" flex gap-4 justify-between mb-4 font-bold">
