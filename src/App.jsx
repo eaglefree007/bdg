@@ -18,18 +18,19 @@ function App() {
   const colors = ['red', 'green']; // Array containing color choices
 
   const [color, setColor] = useState(() => {
-    // Choose a random color initially
-    return colors[Math.floor(Math.random() * colors.length)];
+    return colors[Math.floor(Math.random() * colors.length)]; // Choose a random color initially
   });
-  const changeColor = () => {
-    // Check for a truthy period value (not an empty string)
-    if (period) {
-      // Generate a random index within the colors array
-      const randomIndex = Math.floor(Math.random() * colors.length);
-      const newColor = colors[randomIndex];
+
+  const changeColor = (e) => {
+    e.preventDefault()
+    if (period) { // Check if period has a value before changing color
+      const newColor = colors[Math.floor(Math.random() * colors.length)];
       setColor(newColor);
+      console.log("Color changed to:", newColor); // Add for debugging
     }
   };
+  let  bg = `bg-${color}-700`
+  console.log(bg)
   return (
     <div className="w-100 h-[100vh] px-3 py-1 border border-white flex flex-col justify-around">
       <div className=" w-11/12 mx-auto flex gap-6 justify-around items-center">
@@ -55,16 +56,17 @@ function App() {
         <hr className="border-white-full border" />
       </div>
       <div className="w-1/3 mx-auto gap-6 my-2">
-        <div className="flex gap-4 justify-between mb-4">
-          <p className=" ">RESULT :</p>
-          <div className={`mx-auto  h-8 w-8 rounded-full bg-${color}-600`}></div>
+      <div className="flex gap-4 justify-between mb-4">
+          <p className=" font-bold">RESULT :</p>
+          <div className={`mx-auto  h-8 border border-pink-50 px-4  rounded-md py-auto font-bold`}>{color == "green" ? "Win" : "Loss"}</div>
+          {/* <div className={`mx-auto border border-red-50 h-8 w-8 rounded-full bg-${color}-600`}></div> */}
         </div>
-        <div className=" flex gap-4 justify-between mb-4">
+        <div className=" flex gap-4 justify-between mb-4 font-bold">
           <p className="">SERVER </p>
           <span className="">:</span>
-          <p className="">CONNECTED</p>
+          <p className="border border-pink-50 px-4  rounded-md py-auto font-bold bg-green-900">CONNECTED</p>
         </div>
-        <div className="flex gap-4 justify-between mb-4">
+        <div className="flex font-bold gap-4 justify-between mb-4">
           <p className="">PERIOD </p>
           <span className="">:</span>
           <input
