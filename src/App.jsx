@@ -9,31 +9,28 @@ function App() {
     setPeriod(newValue);
   };
 
-  // const [color, setColor] = useState('green'); // Initial color state
-
-  // const changeColor = () => {
-  //   const newColor = color === 'green' ? 'blue' : 'green';
-  //   setColor(newColor);
-  // };
-  const colors = ['red', 'green']; // Array containing color choices
+  const colors = ["red", "green"]; // Array containing color choices
 
   const [color, setColor] = useState(() => {
     return colors[Math.floor(Math.random() * colors.length)]; // Choose a random color initially
   });
 
   const changeColor = (e) => {
-    e.preventDefault()
-    if (period) { // Check if period has a value before changing color
+    e.preventDefault();
+    if (period) {
+      // Check if period has a value before changing color
       const newColor = colors[Math.floor(Math.random() * colors.length)];
       setColor(newColor);
-      console.log("Color changed to:", newColor); // Add for debugging
+      // console.log("Color changed to:", newColor); // Add for debugging
     }
   };
-  let  bg = `bg-${color}-700`
-  console.log(bg)
+
+  // let  bg = `bg-${color}-700`
+  // console.log(bg)
+
   return (
     <div className="w-100 h-[100vh] px-3 py-1 border border-white flex flex-col justify-around">
-      <div className=" w-11/12 mx-auto flex gap-6 justify-around items-center">
+      <div className=" w-11/12 mx-auto flex flex-col sm:flex-row gap-6 justify-around items-center">
         <div className="w-full mx-auto  p-1">
           <img src={bdg_logo} alt="" className="w-full h-auto" />
         </div>
@@ -41,7 +38,7 @@ function App() {
           <div className="for_img">
             {/* <h2 className="font-xl mx-auto font-bold">BDG Game</h2> */}
             {/* <img src="" alt="" /> */}
-            <p className=" text-xl">
+            <p className=" text-center text-xl">
               Welcome to our app BDG Game. Enter your period Number and select
               result type and see the result.
             </p>
@@ -55,35 +52,47 @@ function App() {
         </p>
         <hr className="border-white-full border" />
       </div>
-      <div className="w-1/3 mx-auto gap-6 my-2">
-      <div className="flex gap-4 justify-between mb-4">
-          <p className=" font-bold">RESULT :</p>
-          <div className={`mx-auto text-3xl h-8 px-4  rounded-md py-auto font-bold`}>{color == "green" ? "🟢" : "🔴"}</div>
-          {/* <div className={`mx-auto border border-red-50 h-8 w-8 rounded-full bg-${color}-600`}></div> */}
+
+      <div className=" my-2 flex flex-col justify-around ">
+
+        <div className="flex justify-between mb-4 w-1/2 mx-auto">
+          <p className=" font-bold text-3xl">RESULT</p>
+          <div
+            className={`mx-auto text-3xl h-8 px-4  rounded-md py-auto font-bold`}
+          >
+            {color == "green" ? "🟢" : "🔴"}
+          </div>
         </div>
-        <div className=" flex gap-4 justify-between mb-4 font-bold">
-          <p className="">SERVER </p>
-          <span className="">:</span>
-          <p className="border border-pink-50 px-4  rounded-md py-auto font-bold bg-green-900">CONNECTED</p>
+
+        <div className=" flex justify-between items-center mb-4 font-bold w-auto p-2 mx-auto">
+          <p className="mx-6 text-xl">SERVER </p>
+          {/* <span className="">:</span> */}
+          <p className="border border-pink-50  px-4  rounded-md py-auto font-bold bg-green-900">
+            CONNECTED
+          </p>
         </div>
-        <div className="flex font-bold gap-4 justify-between mb-4">
+
+        <div className="w-1/2 mx-auto flex font-bold justify-between items-center mb-4">
           <p className="">PERIOD </p>
-          <span className="">:</span>
           <input
-            type="number" min="100" maxLength={3}
-            className="w-1/2 text-black"
+            type="number"
+            min="100"
+            maxLength={3}
+            className="w-1/3 p-1 rounded-md border border-white text-black"
             value={period} // Set input value from state
             onChange={handleInputChange} // Call handler on change
           />
         </div>
-        {/* <input type="text" className="" /> */}
+
       </div>
-      <button onClick={changeColor} className="flex justify-center items-center mx-auto bg-gray-700 text-white">
+      <button
+        onClick={changeColor}
+        className="flex justify-center items-center mx-auto bg-gray-700 text-white"
+      >
         Start hack
       </button>
-      <div className="w-1/2 mx-auto">
+      <div className="hidden sm:block w-1/2 mx-auto">
         <img src={bdg_logo} alt="" className="" />
-        {/* <span className="mx-auto block">Hack</span> */}
       </div>
       <div className="text-center">
         <p className="font-bold mb-6">Join us on telegram and download</p>
