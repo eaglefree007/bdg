@@ -29,7 +29,7 @@ function App() {
   // console.log(bg)
 
   return (
-    <div className="w-100 h-[100vh] px-3 py-1 border border-white flex flex-col justify-around">
+    <div className="w-100 sm:w-[688px] relative  h-[100vh] px-3 py-1  flex flex-col justify-around">
       <div className=" w-11/12 mx-auto flex flex-col sm:flex-row gap-6 justify-around items-center">
         <div className="w-full mx-auto  p-1">
           <img src={bdg_logo} alt="" className="w-full h-auto" />
@@ -53,9 +53,9 @@ function App() {
         <hr className="border-white-full border" />
       </div>
 
-      <div className=" my-2 flex flex-col justify-around ">
+      <div className=" my-2 flex flex-col justify-around w-[80%] sm:w-[70%] mx-auto">
 
-        <div className="flex justify-between mb-4 w-1/2 mx-auto">
+        <div className="flex justify-between my-auto w-1/2 mx-auto">
           <p className=" font-bold text-3xl">RESULT</p>
           <div
             className={`mx-auto text-3xl h-8 px-4  rounded-md py-auto font-bold`}
@@ -64,10 +64,10 @@ function App() {
           </div>
         </div>
 
-        <div className=" flex justify-between items-center mb-4 font-bold w-auto p-2 mx-auto">
+        <div className=" flex justify-between items-center font-bold w-auto p-2 mx-auto">
           <p className="mx-6 text-xl">SERVER </p>
           {/* <span className="">:</span> */}
-          <p className="border border-pink-50  px-4  rounded-md py-auto font-bold bg-green-900">
+          <p className="border border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">
             CONNECTED
           </p>
         </div>
@@ -91,9 +91,9 @@ function App() {
       >
         Start hack
       </button>
-      <div className="hidden sm:block w-1/2 mx-auto">
+      {/* <div className="hidden sm:block w-1/2 mx-auto">
         <img src={bdg_logo} alt="" className="" />
-      </div>
+      </div> */}
       <div className="text-center">
         <p className="font-bold mb-6">Join us on telegram and download</p>
         <div className="flex justify-around items-center mb-6">
