@@ -54,36 +54,37 @@ function App() {
       </div>
 
       <div className=" my-2 flex flex-col justify-around w-[80%] sm:w-[70%] mx-auto">
-
         <div className="flex justify-between my-auto w-1/2 mx-auto">
           <p className=" font-bold text-3xl">RESULT</p>
           <div
             className={`mx-auto text-3xl h-8 px-4  rounded-md py-auto font-bold`}
           >
-            {color == "green" ? "🟢" : "🔴"}
+            {period && color == "green" ? "🟢" : "🔴"}
           </div>
         </div>
 
         <div className=" flex justify-between items-center font-bold w-auto p-2 mx-auto">
           <p className="mx-6 text-xl">SERVER </p>
           {/* <span className="">:</span> */}
-          <p className="border border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">
+          <p className="border w-[65%] border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">
             CONNECTED
           </p>
         </div>
 
-        <div className="w-1/2 mx-auto flex font-bold justify-between items-center mb-4">
-          <p className="">PERIOD </p>
+        <div className="w-[67%] mx-auto flex font-bold justify-between items-center mb-4">
+          <div className="flex mx-4 items-center">
+            <p className="">⌚ </p>
+            <p className=" text-xl">PERIOD </p>
+          </div>
           <input
             type="number"
             min="100"
             maxLength={3}
-            className="w-1/3 p-1 rounded-md border border-white text-black"
+            className="w-[80%] p-1 rounded-md border border-white text-black"
             value={period} // Set input value from state
             onChange={handleInputChange} // Call handler on change
           />
         </div>
-
       </div>
       <button
         onClick={changeColor}
