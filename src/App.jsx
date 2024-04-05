@@ -64,19 +64,18 @@ function App() {
         </div>
 
         <div className=" flex justify-between items-center font-bold w-auto p-2 mx-auto">
-          <p className="mx-6 text-xl"> SERVER </p>
+          <p className="mx-6 text-xl">SERVER</p>
           {/* <span className="">:</span> */}
-          <p className="border border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">
-ind~CONECTED
+          <p className="border border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">ind~CONECTED
           </p>
         </div>
 
         <div className="w-1/2 mx-auto flex font-bold justify-between items-center mb-4">
-          <p className="">P E R I O D</p>
+          <p className="">~P E R I O D!</p>
           <input
             type="number"
             min="100"
-            maxLength={3}
+            maxLength={4}
             className="w-1/3 p-1 rounded-md border border-white text-black"
             value={period} // Set input value from state
             onChange={handleInputChange} // Call handler on change
@@ -88,7 +87,7 @@ ind~CONECTED
         onClick={changeColor}
         className="flex justify-center items-center mx-auto bg-gray-700 text-white"
       >
-        Start hack
+        h@ck
       </button>
       {/* <div className="hidden sm:block w-1/2 mx-auto">
         <img src={bdg_logo} alt="" className="" />
