@@ -64,15 +64,15 @@ function App() {
         </div>
 
         <div className=" flex justify-between items-center font-bold w-auto p-2 mx-auto">
-          <p className="mx-6 text-xl">SERVER </p>
+          <p className="mx-6 text-xl"> SERVER </p>
           {/* <span className="">:</span> */}
           <p className="border border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">
-            CONNECTED
+usa~ CONNECTED
           </p>
         </div>
 
         <div className="w-1/2 mx-auto flex font-bold justify-between items-center mb-4">
-          <p className="">PERIOD </p>
+          <p className=""> P E R I O D </p>
           <input
             type="number"
             min="100"
