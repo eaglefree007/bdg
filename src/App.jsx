@@ -100,13 +100,13 @@ function App() {
             href="https://telegram.dog/onlineluterz"
             className="hover:border-gray-300 hover:bg-blue-400 hover:text-white border border-transparent transition duration-300 ease-in-out px-4 py-2 rounded-md text-2xl"
           >
-            TeleGram
+            update
           </a>
           <a
             href="https://bdggame.in/#/register?invitationCode=671443560283"
             className="hover:border-gray-300 hover:bg-green-400 hover:text-white border border-transparent transition duration-300 ease-in-out px-4 py-2 rounded-md text-2xl"
           >
-            ReGister
+            conect
           </a>
         </div>
       </div>
