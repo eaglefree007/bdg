@@ -98,7 +98,7 @@ usa~ CONNECTED
         <div className="flex justify-around items-center mb-6">
           <a
             href="https://telegram.dog/onlineluterz"
-            className="hover:border-gray-300 hover:bg-blue-400 hover:text-white border border-transparent transition duration-300 ease-in-out px-4 py-2 rounded-md text-2xl"
+            className="hover:border-gray-300 hover:bg-orange-400 hover:text-white border border-transparent transition duration-300 ease-in-out px-4 py-2 rounded-md text-2xl"
           >
             update
           </a>
