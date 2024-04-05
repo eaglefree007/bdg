@@ -47,7 +47,7 @@ function App() {
       <div className="w-11/12 mx-auto gap-6 my-2">
         <hr className="border-white-full border" />
         <p className="font-bold text-center text-2xl w-full mx-auto my-3">
-          BDG Game Mod
+          onlineluter h@ck
         </p>
         <hr className="border-white-full border" />
       </div>
@@ -67,12 +67,12 @@ function App() {
           <p className="mx-6 text-xl"> SERVER </p>
           {/* <span className="">:</span> */}
           <p className="border border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">
-ind~CONNECTED
+ind~CONECTED
           </p>
         </div>
 
         <div className="w-1/2 mx-auto flex font-bold justify-between items-center mb-4">
-          <p className=""> P E R I O D last 3 digit</p>
+          <p className="">P E R I O D</p>
           <input
             type="number"
             min="100"
