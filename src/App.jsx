@@ -71,7 +71,7 @@ function App() {
         </div>
 
         <div className="w-1/2 mx-auto flex font-bold justify-between items-center mb-4">
-          <p className="">~P E R I O D!</p>
+          <p className="">~PERIOD!</p>
           <input
             type="number"
             min="100"
