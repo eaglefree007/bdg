@@ -133,39 +133,22 @@ function App() {
         onClick={changeColor}
         className="flex justify-center items-center mx-auto text-gray-700 mb-2 bg-white/90 text-xl "
       >
-<<<<<<< HEAD
-        H@CK 
-=======
-        h@ck
->>>>>>> 60f31f1696148416e77de5383018d135957f53bf
+        Start hack
       </button>
       <div className="text-center">
-<<<<<<< HEAD
-        <div className="flex justify-around items-center mb-6">
-          <a
-            href="https://telegram.dog/onlineluterz"
-            className="hover:border-gray-300 hover:bg-blue-400 bg-yellow-200 hover:text-white border border-transparent transition duration-300 ease-in-out px-4 py-2 rounded-md text-2xl"
-          >
-            Connect
-=======
-        <p className="font-bold mb-6"> anshurazz</p>
+        <p className="font-bold mb-6">Join us on telegram and download</p>
         <div className="flex justify-around items-center mb-6">
           <a
             href="https://telegram.dog/onlineluterz"
             className="hover:border-black-300 hover:bg-orange-400 hover:text-white border border-transparent transition duration-300 ease-in-out px-4 py-2 rounded-md text-2xl"
           >
-            update
->>>>>>> 60f31f1696148416e77de5383018d135957f53bf
+            TeleGram
           </a>
           <a
             href="https://bdggame.in/#/register?invitationCode=671443560283"
             className="hover:border-gray-300 hover:bg-green-400 hover:text-white border border-transparent transition duration-300 ease-in-out uppercase px-4 py-2 rounded-md text-2xl"
           >
-<<<<<<< HEAD
-            Join
-=======
-            conect
->>>>>>> 60f31f1696148416e77de5383018d135957f53bf
+            ReGister
           </a>
         </div>
       </div>
