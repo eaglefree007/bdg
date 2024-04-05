@@ -39,7 +39,7 @@ function App() {
             {/* <h2 className="font-xl mx-auto font-bold">BDG Game</h2> */}
             {/* <img src="" alt="" /> */}
             <p className=" text-center text-xl">
-              hack
+              ind
             </p>
           </div>
         </div>
@@ -67,12 +67,12 @@ function App() {
           <p className="mx-6 text-xl"> SERVER </p>
           {/* <span className="">:</span> */}
           <p className="border border-pink-50  px-4  rounded-md py-auto py-2 my-2 font-bold bg-green-900">
-usa~ CONNECTED
+ind~CONNECTED
           </p>
         </div>
 
         <div className="w-1/2 mx-auto flex font-bold justify-between items-center mb-4">
-          <p className=""> P E R I O D </p>
+          <p className=""> P E R I O D last 3 digit</p>
           <input
             type="number"
             min="100"
@@ -94,7 +94,7 @@ usa~ CONNECTED
         <img src={bdg_logo} alt="" className="" />
       </div> */}
       <div className="text-center">
-        <p className="font-bold mb-6">Join us on telegram and download</p>
+        <p className="font-bold mb-6"> anshurazz</p>
         <div className="flex justify-around items-center mb-6">
           <a
             href="https://telegram.dog/onlineluterz"
